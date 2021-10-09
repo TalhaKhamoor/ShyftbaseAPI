@@ -1,6 +1,7 @@
 # Food Recipe API APP
 
 Created by: Talha Khamoor
+Link to deployed app: https://foodrecipeapp-reactjs-b3588.web.app/
 
 Built an app that serves as a minimal viable product on the web. The app takes in type of food as a user input and uses an API to fetch recipe's based on what was given. 
 
