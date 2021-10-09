@@ -1,5 +1,4 @@
 import "./App.css";
-// import "./key";
 import Axios from "axios";
 import { useState } from "react";
 import Tile from "./Tile";
@@ -26,7 +25,7 @@ function App() {
 
   return (
     <div className="App">
-      <h1>🥪🦞🍩Talha Food Recipe🍕🍰🥞</h1>
+      <h1>🥪🦞🍩Talha's Food Recipe App🍕🍰🥞</h1>
       <form className="foodApp_searchForm" onSubmit={onSubmit}>
         <input
           type="text"
