@@ -2,13 +2,14 @@ import "./App.css";
 // import "./key";
 import Axios from "axios";
 import { useState } from "react";
+import Tile from "./Tile";
 
 function App() {
   const [query, setquery] = useState("");
   const [recipes, setrecipes] = useState([]);
 
-  const YOUR_APP_ID = "a3528aa5";
-  const YOUR_APP_KEY = "b981ff5cc07fed4746c9e995767a238b";
+  const YOUR_APP_ID = "1777e763";
+  const YOUR_APP_KEY = "99bf013c274395f66f664f51e316430b	";
 
   var url = `https://api.edamam.com/api/recipes/v2?type=public&q=${query}&app_id=${YOUR_APP_ID}&app_key=${YOUR_APP_KEY}`;
 
@@ -30,16 +31,16 @@ function App() {
         <input
           type="text"
           className="foodApp_input"
-          placeholder="please enter your inrident here"
+          placeholder="Please enter search here"
           value={query}
           onChange={(e) => setquery(e.target.value)}
         />
         <input className="foodApp_submit" type="submit" value="Search" />
       </form>
 
-      <div>
+      <div className="foodApp_recipes">
         {recipes.map((recipe) => {
-          return <p>{recipe["recipe"]["label"]}</p>;
+          return <Tile recipe={recipe} />;
         })}
       </div>
     </div>

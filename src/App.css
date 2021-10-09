@@ -21,3 +21,15 @@
   font-size: 15px;
   margin-left: 5px;
 }
+
+.foodApp_recipes {
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: 230px 230px;
+  align-items: baseline;
+}
+.foodApp_healthLabels {
+  padding: 8px 8px;
+  margin-left: 8px;
+  border-radius: 4px;
+}
