@@ -5,13 +5,16 @@ import { useState } from "react";
 
 function App() {
   const [query, setquery] = useState("");
+  const [recipes, setrecipes] = useState([]);
 
   const YOUR_APP_ID = "a3528aa5";
   const YOUR_APP_KEY = "b981ff5cc07fed4746c9e995767a238b";
+
   var url = `https://api.edamam.com/api/recipes/v2?type=public&q=${query}&app_id=${YOUR_APP_ID}&app_key=${YOUR_APP_KEY}`;
 
   async function getRecipes() {
     var result = await Axios.get(url);
+    setrecipes(result.data.hits);
     console.log(result.data);
   }
 
@@ -33,6 +36,12 @@ function App() {
         />
         <input className="foodApp_submit" type="submit" value="Search" />
       </form>
+
+      <div>
+        {recipes.map((recipe) => {
+          return <p>{recipe["recipe"]["label"]}</p>;
+        })}
+      </div>
     </div>
   );
 }
