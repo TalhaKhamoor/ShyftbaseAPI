@@ -1,3 +1,20 @@
+# Food Recipe API APP
+
+Created by: Talha Khamoor
+
+Built an app that serves as a minimal viable product on the web. The app takes in type of food as a user input and uses an API to fetch recipe's based on what was given. 
+
+*** Time limited challenge (3 hours) *** 
+
+The following requirments were followed for this app:
+
+  - Has a front end where users can interact with the app 
+  - Uses one of the APIs in the following list of public free APIs except  TheMealDB  API (please don't use TheMealDB)  : https://github.com/public-apis/public-apis  (I used https://www.edamam.com/)
+  - build and deploy on Firebase, AWS or Azure. Other cloud solutions could also be used. (I used Firebase)
+  - Share your final project in a Git repo where we can access it
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
