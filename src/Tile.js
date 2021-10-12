@@ -10,7 +10,11 @@ export default function Tile({ recipe }) {
           window.open(recipe["recipe"]["url"]);
         }}
       >
-        <img className="tile_img" src={recipe["recipe"]["image"]} />
+        <img
+          className="tile_img"
+          src={recipe["recipe"]["image"]}
+          alt="img of recipe"
+        />
         <p className="tile_name">{recipe["recipe"]["label"]}</p>
       </div>
     )
